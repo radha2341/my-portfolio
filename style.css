@@ -1,0 +1,213 @@
+/* Resetting default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#introduction{
+    padding-top: 70px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: midnightblue;
+    background-image: url('images/header-background.jpeg');
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.section {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Added a semi-transparent white background for sections */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+.project {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description strong {
+    font-weight: bold;
+}
+
+.project-description em {
+    font-style: italic;
+}
+/* Skills Section Styling */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Certifications Section Styling */
+
+.certifications {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certifications li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.certifications li ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.certifications li ul li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.certifications li:last-child {
+    margin-bottom: 0;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+}
