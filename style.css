@@ -4,11 +4,17 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
-/* Global Styles */
+#introduction{
+    padding-top: 70px;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-image: url('images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
 }
 
@@ -18,18 +24,9 @@ body {
     padding: 20px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-/* Header Styles */
 header {
-    background-color: #343a40;
+    background-color: midnightblue;
+    background-image: url('images/header-background.jpeg');
     color: #fff;
     padding: 15px 0;
     position: fixed;
@@ -63,6 +60,7 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -71,10 +69,9 @@ nav ul li a:hover {
     color: #ffd700;
 }
 
-/* Section Styles */
 .section {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Added a semi-transparent white background for sections */
     border-radius: 8px;
     margin-bottom: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -90,7 +87,42 @@ nav ul li a:hover {
     color: #555;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+.project {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description strong {
+    font-weight: bold;
+}
+
+.project-description em {
+    font-style: italic;
+}
 /* Skills Section Styling */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +155,7 @@ nav ul li a:hover {
 }
 
 /* Certifications Section Styling */
+
 .certifications {
     list-style-type: none;
     padding: 0;
@@ -149,25 +182,12 @@ nav ul li a:hover {
     margin-bottom: 0;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    clear: both;
-}
-
-footer p {
-    margin-bottom: 5px;
-}
-
 footer i {
     margin-right: 5px;
 }
 
 footer a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -175,68 +195,80 @@ footer a:hover {
     color: #ffd700;
 }
 
-/* Media Queries */
+
 @media only screen and (max-width: 768px) {
     nav ul li {
         display: block;
         margin-bottom: 10px;
     }
+}
 
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+}
+/* For screens smaller than 768px (tablets and phones in portrait) */
+@media only screen and (max-width: 768px) {
     header .container {
         flex-direction: column;
         align-items: center;
     }
-
     header h1 {
         margin-left: 0;
         margin-bottom: 10px;
         text-align: center;
     }
-
     nav ul {
         text-align: center;
         margin-top: 10px;
     }
-
     nav ul li {
         display: block;
         margin-bottom: 10px;
     }
-
     .container {
         padding: 10px;
     }
-
     .section {
         padding: 30px 10px;
     }
-
+    .project img {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+    }
+    .project-description {
+        margin-left: 0;
+        margin-top: 10px;
+    }
     .skills .skill {
         width: 45%;
         margin: 10px;
     }
-
     .certifications li {
         padding: 8px;
     }
-
     footer p {
         margin-bottom: 10px;
     }
 }
 
+/* For screens smaller than 600px (phones in portrait) */
 @media only screen and (max-width: 600px) {
     header h1 {
         font-size: 20px;
     }
-
     nav ul li a {
         padding: 8px 16px;
         font-size: 14px;
     }
-
     .skills .skill {
         width: 100%;
-        max-width: 200px;
     }
 }
