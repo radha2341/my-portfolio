@@ -237,5 +237,6 @@ footer a:hover {
 
     .skills .skill {
         width: 100%;
+        max-width: 200px;
     }
 }
