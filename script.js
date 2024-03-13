@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
     document.body.addEventListener('click', smoothScroll);
+    document.body.addEventListener('touchstart', smoothScroll);
+    document.body.addEventListener('touchend', smoothScroll);
+    document.body.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            smoothScroll(event);
+        }
+    });
 
     function smoothScroll(event) {
         if (event.target.matches('a[href^="#"]')) {
@@ -17,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Add active class to nav links on scroll
     const navLinks = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('.section');
 
@@ -39,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function checkSectionScroll() {
         const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
         sections.forEach(section => {
-            if (scrollPosition >= section.offsetTop - 50 && scrollPosition < section.offsetTop + section.offsetHeight - 50) {
+            if (scrollPosition >= section.offsetTop - 100 && scrollPosition < section.offsetTop + section.offsetHeight - 100) {
                 const id = section.getAttribute('id');
                 navLinks.forEach(link => {
                     if (link.getAttribute('href').slice(1) === id) {
@@ -53,4 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', debounce(checkSectionScroll));
+
+    window.addEventListener('resize', function() {
+        checkSectionScroll();
+    });
 });
