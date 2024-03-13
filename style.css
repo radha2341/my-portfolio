@@ -211,3 +211,64 @@ footer a:hover {
         margin-right: 10px;
     }
 }
+/* For screens smaller than 768px (tablets and phones in portrait) */
+@media only screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .section {
+        padding: 30px 10px;
+    }
+    .project img {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+    }
+    .project-description {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .skills .skill {
+        width: 45%;
+        margin: 10px;
+    }
+    .certifications li {
+        padding: 8px;
+    }
+    footer p {
+        margin-bottom: 10px;
+    }
+}
+
+/* For screens smaller than 600px (phones in portrait) */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .skills .skill {
+        width: 100%;
+    }
+}
