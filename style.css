@@ -87,62 +87,6 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* Education Section Styling */
-
-#Education {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-#Education .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-#Education h2 {
-    text-align: left;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-#Education p {
-    margin-bottom: 15px;
-    color: #555;
-}
-
-#Education strong {
-    font-weight: bold;
-}
-
-#Education .section-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#Education .section-content .education-item {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#Education .section-content .education-item h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-#Education .section-content .education-item .school {
-    font-weight: bold;
-    color: #007bff;
-}
-
-#Education .section-content .education-item .details {
-    color: #555;
-    margin-bottom: 5px;
-}
 
 footer {
     background-color: #333;
@@ -333,13 +277,7 @@ footer a:hover {
     .section {
         padding: 30px 10px;
     }
-        #Education .container {
-        padding: 0 10px;
-    }
 
-    #Education .section-content .education-item {
-        padding: 15px;
-    }
     .project img {
         width: 100%;
         margin-right: 0;
@@ -382,12 +320,4 @@ footer a:hover {
         font-size: 24px;
     }
 
-    #Education .section-content .education-item h3 {
-        font-size: 18px;
-    }
-
-    #Education .section-content .education-item .school,
-    #Education .section-content .education-item .details {
-        font-size: 14px;
-    }
 }
