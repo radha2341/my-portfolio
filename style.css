@@ -162,15 +162,17 @@ footer p {
 }
 
 .certifications li {
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .certifications li ul {
     list-style-type: circle;
     margin-left: 20px;
+    padding: 10px 0;
 }
 
 .certifications li ul li {
@@ -181,6 +183,29 @@ footer p {
 .certifications li:last-child {
     margin-bottom: 0;
 }
+
+.certifications h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.certifications p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.certifications a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.certifications a:hover {
+    color: #0056b3;
+}
+
 
 footer i {
     margin-right: 5px;
@@ -211,6 +236,7 @@ footer a:hover {
         margin-right: 10px;
     }
 }
+
 /* For screens smaller than 768px (tablets and phones in portrait) */
 @media only screen and (max-width: 768px) {
     header .container {
