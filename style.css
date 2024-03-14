@@ -219,6 +219,62 @@ footer a {
 footer a:hover {
     color: #ffd700;
 }
+#Contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#Contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Contact h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-item a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+}
+
 
 
 /* For screens smaller than 768px (tablets and phones in portrait) */
