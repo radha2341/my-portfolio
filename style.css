@@ -219,59 +219,38 @@ footer a {
 footer a:hover {
     color: #ffd700;
 }
-#Contact {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-}
-
-#Contact .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#Contact h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 800px;
+.container {
+    max-width: 960px;
     margin: 0 auto;
-}
-
-.contact-item {
-    flex: 1 1 200px;
-    text-align: center;
-    margin: 10px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-item i {
-    font-size: 24px;
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
     margin-bottom: 10px;
-    color: #007bff;
 }
 
-.contact-item p {
-    margin: 0;
-    font-size: 16px;
+.contact-list i {
+    margin-right: 10px;
+    font-size: 20px;
 }
 
-.contact-item a {
+.contact-list span {
+    vertical-align: middle;
+}
+
+/* Style links */
+.contact-list a {
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.contact-item a:hover {
+.contact-list a:hover {
     color: #0056b3;
 }
 
