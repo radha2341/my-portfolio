@@ -221,22 +221,6 @@ footer a:hover {
 }
 
 
-@media only screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 10px 0;
-    }
-    nav ul li {
-        margin-right: 10px;
-    }
-}
-
 /* For screens smaller than 768px (tablets and phones in portrait) */
 @media only screen and (max-width: 768px) {
     header .container {
